@@ -15,8 +15,8 @@ table <- table[order(table$DateTime), ]
 
 
 #range between 7-14 Feb.
-rng <-  which ( B[, 'DateTime'] < as.POSIXct("2021-02-15 00:00:00 IST") &
-                  B[, 'DateTime'] >= as.POSIXct("2021-02-08 00:00:00 IST" ) )
+rng <-  which ( table[, 'DateTime'] < as.POSIXct("2021-02-15 00:00:00 IST") &
+                  table[, 'DateTime'] >= as.POSIXct("2021-02-08 00:00:00 IST" ) )
 
 
 
